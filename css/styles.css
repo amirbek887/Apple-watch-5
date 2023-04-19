@@ -66,6 +66,7 @@ a {
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
   padding: 12px 38px;
   border: 0;
   font-weight: bold;
@@ -73,6 +74,7 @@ a {
   line-height: 1.5;
   color: #fff;
   background-color: var(--primary-color);
+  text-align: center;
   text-transform: uppercase;
   transition: background-color 0.4s ease;
 }
@@ -188,12 +190,20 @@ a {
   line-height: 1.2;
   color: #000;
 }
+.lead-cta--white .lead-cta-heading {
+  color: #fff;
+}
+
 .lead-cta-text {
   margin-top: 0;
   margin-bottom: 30px;
   padding-left: 37px;
   border-left: 3px solid #888;
   color: #777;
+}
+.lead-cta--white .lead-cta-text {
+  color: #fff;
+  border-color: #fff;
 }
 /* FEATURES */
 .features {
@@ -237,7 +247,35 @@ a {
   box-shadow: 16px 0 0 #ddd,
   32px 0 0 #ddd;
 }
-.lined-link {
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.runners-lead-cta {
+  margin-left: auto;
 }
 /* RETINA BGS */
 @media
